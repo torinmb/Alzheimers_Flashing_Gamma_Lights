@@ -13,7 +13,7 @@
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      60
 
-float hz = 40.0
+float hz = 40.0;
 
 // When we setup the NeoPixel library, we tell it how many pixels, and which pin to use to send signals.
 // Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
@@ -25,6 +25,8 @@ unsigned long count;
 void setup() {
   Serial.begin(115200);
   pixels.begin(); // This initializes the NeoPixel library.
+  // to flash at 40hz / 40 times per second the strip needs to repeatedly turn on for 12.5ms and off for 12.5ms.
+  hz = (1000.0 / (hz * 2.0)); 
 }
 
 void loop() {
@@ -39,5 +41,5 @@ void loop() {
     }
   }
   pixels.show(); // This sends the updated pixel color to the hardware.
-  delay(1000/(2.0 * hz)); // 40ms on, 40ms off so the light turns on a total of 40 times in a secon
+  delay(hz);
 }

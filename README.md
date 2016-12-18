@@ -1,8 +1,9 @@
-# Alzheimers_Flashing_Gamma_Lights
 Arduino + LED strip flashing at 40hz for Alzheimers
 
-Inspired by the Radio Lab podcast http://www.radiolab.org/story/bringing-gamma-back/ showcasing a potential treatment to Alzheimers.
+Inspired by the Radio Lab podcast http://www.radiolab.org/story/bringing-gamma-back/ showcasing the MIT research that reduced beta amyloid proteins in the hippocampus by 50% when mice with early stages of Alzheimer’s were exposed to flickering light at 40hz for an hour.
 
+Warning: This will strobe the LED strip, so do not use it around individuals with epilepsy. 
+This research was only tested on mice and has not been proven to work on humans yet.
 
 # Parts
 Arduino Uno: $24.95

@@ -2,6 +2,9 @@ Arduino + LED strip flashing at 40hz for Alzheimers
 
 Inspired by the Radio Lab podcast http://www.radiolab.org/story/bringing-gamma-back/ showcasing the MIT research that reduced beta amyloid proteins in the hippocampus by 50% when mice with early stages of Alzheimer’s were exposed to flickering light at 40hz for an hour.
 
+After recording a slow-motion video at 240fps it turned out there was a delay when using the LED strip, so instead of turning the LED strip on every 12.5ms and off 12.5 ms the interval was adjusted to turn on and off every 10ms, which resulted in the lights flashing 40 times per second / at 40hz. Here is a video of it currently working: https://www.dropbox.com/s/yunfq8pdprz46qs/40hz%20With%2010ms%20Arduino%20Delay.mp4?dl=0
+
+
 Warning: This will strobe the LED strip, so do not use it around individuals with epilepsy. 
 The research was only tested on mice and has not been proven to work on humans.
 
